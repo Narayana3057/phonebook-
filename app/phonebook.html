@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phonebook with Node.js and MySQL</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+
+<section class="page login">
+  <div class="login-area">
+    <div class="title">
+      <a class="home-link" href="/">Home</a>
+      <h2>Phonebook</h2>
+    </div>
+    
+      <p class="alert alert-success">Welcome to Phonebook</p>
+    
+    <form class="form form-phonebook" action="/phonebook" method="POST">
+      <span>+</span><input type="number" name="code" min="000" max="999" placeholder="Code" required />
+      <input type="number" name="phone" placeholder="Phone" required />
+      <input type="text" name="name" placeholder="Name" required />
+	   <input type="text" name="name" placeholder="Gmail" required />
+      <button class="btn btn-submit" type="submit">SAVE</button>
+    </form>
+    <div class="phonebook">
+      <ul>      
+          <p class="alert alert-error">No Phone Number Found!</p>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
+
